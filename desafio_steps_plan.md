@@ -10,7 +10,7 @@
 
 | Step | Data (PT) | Jogo | Pick | Odd alvo | Modelo |
 |------|-----------|------|------|----------|--------|
-| **1** | **04/07 ~18:00** | CAN vs MAR | **MAR não vence ambas (Não)** | **~1.42** | **~96%** |
+| **1** | **04/07 ~18:00** | CAN vs MAR | **Under 1.5 golos 1.ª parte @ 1.31** | **1.31** | **~79%** |
 | **2** | **04/07 ~22:00** | FRA vs PAR | **França/Empate & Under 3.5** | **~1.38** | **~82%** |
 | **3** | **05/07 ~21:00** | BRA vs NOR | **Under 3.5 golos** | **~1.40** | **~78%** |
 | **4** | **05/07 ~01:00** | MEX vs ENG | **Under 2.5 ou EMP/U3.5** | **~1.40** | **~76%** |
@@ -50,11 +50,24 @@ Podes juntar legs **do mesmo bloco** — odd total ≈ multiplicação das perna
 ## Detalhe por step
 
 ### Step 1 — Canadá vs Marrocos · 04/07 ~18:00
-**MAR não vence ambas as partes — NÃO @ ~1.42**  
-- **~96%** modelo — melhor pick do jogo (U2.5 só ~61%)  
-- Perde se: Marrocos domina **os dois períodos** (~4%)  
-- Plano B: Under 1.5 golos 1.ª parte @ 1.40 (~79%)  
-- Score previsto: **Marrocos 1-0**
+**Under 1.5 golos — 1.ª parte @ 1.31 (Betclic)**  
+- **~79%** modelo (25k MC) — único pick na gama 1.30–1.50 que passa 75%  
+- Perde se: **2+ golos na 1.ª parte** (~21%) — ex.: 1-1 HT, 0-2 HT  
+- Plano B (maior % mas handicap): **Canadá +2 @ 1.31** (~82% TR)  
+- **Evitar:** MAR não vence ambas @ **1.11** (fora da gama); MAR/Emp U3.5 @ 1.38 (~60%); U2.5 @ 1.58 (~61%)  
+- Score previsto: **0-0 ou 0-1 HT** → Marrocos 0-1 ou 1-1 TR
+
+**Odds Betclic confirmadas (screenshots):**
+| Mercado | Odd | Modelo | Veredicto |
+|---------|-----|--------|-----------|
+| Under 1.5 golos 1.ª parte | **1.31** | **78.6%** | ✅ **APOSTAR** |
+| Canadá +2 handicap | 1.31 | 81.9% | ⚠️ passa 75% mas é handicap |
+| MAR ganha uma das partes Sim | 1.34 | 60.9% | ❌ |
+| MAR/Emp & Under 3.5 | 1.38 | 60.4% | ❌ |
+| Under 1.5 golos 2.ª parte | 1.42 | 55.7% | ❌ |
+| CAN/MAR & Under 4.5 | 1.32 | 64.9% | ❌ |
+| Under 2.5 TR | 1.58 | 61.1% | ❌ |
+| MAR não vence ambas Não | 1.11 | 95.8% | ❌ odd baixa |
 
 ### Step 2 — França vs Paraguai · 04/07 ~22:00
 **França/Empate & Under 3.5 @ ~1.38**  
