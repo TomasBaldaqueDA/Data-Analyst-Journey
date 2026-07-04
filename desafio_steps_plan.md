@@ -10,7 +10,7 @@
 
 | Step | Data (PT) | Jogo | Pick | Odd alvo | Modelo |
 |------|-----------|------|------|----------|--------|
-| **1** | **04/07 ~18:00** | CAN vs MAR | **Under 2.5 golos** | **~1.50** | **~72%** ⚠️ |
+| **1** | **04/07 ~18:00** | CAN vs MAR | **MAR não vence ambas (Não)** | **~1.42** | **~96%** |
 | **2** | **04/07 ~22:00** | FRA vs PAR | **França/Empate & Under 3.5** | **~1.38** | **~82%** |
 | **3** | **05/07 ~21:00** | BRA vs NOR | **Under 3.5 golos** | **~1.40** | **~78%** |
 | **4** | **05/07 ~01:00** | MEX vs ENG | **Under 2.5 ou EMP/U3.5** | **~1.40** | **~76%** |
@@ -50,10 +50,11 @@ Podes juntar legs **do mesmo bloco** — odd total ≈ multiplicação das perna
 ## Detalhe por step
 
 ### Step 1 — Canadá vs Marrocos · 04/07 ~18:00
-**Under 2.5 @ ~1.50**  
-- Jogo tático; mercado aponta 1-0 MAR ou 1-1  
-- **⚠️ ~72%** — ligeiramente abaixo de 75%; **plano B:** saltar e ir directo ao Step 2  
-- Perde se: 2-1, 2-0 aberto, etc.
+**MAR não vence ambas as partes — NÃO @ ~1.42**  
+- **~96%** modelo — melhor pick do jogo (U2.5 só ~61%)  
+- Perde se: Marrocos domina **os dois períodos** (~4%)  
+- Plano B: Under 1.5 golos 1.ª parte @ 1.40 (~79%)  
+- Score previsto: **Marrocos 1-0**
 
 ### Step 2 — França vs Paraguai · 04/07 ~22:00
 **França/Empate & Under 3.5 @ ~1.38**  
