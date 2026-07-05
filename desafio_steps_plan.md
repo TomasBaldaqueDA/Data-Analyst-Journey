@@ -1,6 +1,6 @@
 # Desafio €10 → €1000 — Run 4 (plano completo)
 
-**Bankroll:** **€10**  
+**Bankroll:** **€28.09** *(Wimbledon double 05/07 ✅)*  
 **Filosofia:** hit rate > edge · odd **1.30–1.50** por step · mín. **75%** modelo  
 **Offline:** máx. **2 legs** por acca · só pernas **≥75%** cada
 
@@ -12,7 +12,7 @@
 |------|-----------|------|--------------|-----|--------|-------|
 | **1** | **04/07 18:00** | CAN vs MAR | **Under 1.5 golos 1.ª parte** | **1.31** | **78.6%** | ✅ confirmado |
 | **2** | **04/07 22:00** | PAR vs FRA | **França não vence ambas (Não)** | **1.43** | **77.9%** | ✅ confirmado |
-| **3** | **05/07 ~21:00** | BRA vs NOR | **Under 3.5 golos** | **~1.40** | **~78%** | favorito controla |
+| **3** | **05/07 ~21:00** | BRA vs NOR | **Brasil não vence ambas (Não)** | **~1.42** | **92.1%** | ✅ confirmado MC |
 | **4** | **06/07 ~01:00** | MEX vs ENG | **Under 2.5 ou MEX/EMP U3.5** | **~1.40** | **~76%** | Azteca, knockout |
 | **5** | **06/07 ~20:00** | ESP vs POR | **Espanha/Empate & Under 3.5** | **~1.38** | **~80%** | derby ibérico |
 | **6** | **07/07 ~01:00** | USA vs BEL | **Under 3.5 golos** | **~1.42** | **~77%** | evitar ML EUA |
@@ -77,8 +77,15 @@ Score previsto: **França 2-0**
 
 ## Detalhe Steps 3–8 (R16 — confirmar odd Betclic)
 
-### Step 3 — Brasil vs Noruega · 05/07
-Under 3.5 @ ~1.40 · Noruega sólida, Brasil favorito
+### Step 3 — Brasil vs Noruega · 05/07 ~21:00
+**Brasil não vence ambas as partes — NÃO @ ~1.42** · **92.1%** (25k MC)  
+Perde se: Brasil vence **1.ª parte E 2.ª parte** (~8%)  
+Plano B: Noruega não vence ambas @ ~1.44 (**98.3%**)  
+Evitar: Under 3.5 @ 1.40 (**63%**); BRA/Emp U4.5 @ 1.32 (**57%**); BRA ML @ 1.78 (**51%**)  
+Score previsto: **Brasil 2-1** (Haaland marca, Brasil avança sem dominar ambas as partes)
+
+#### Wimbledon side bet 05/07 ✅
+Heliovaara/Patten ML @ 1.24 + FAA +1.5 sets @ 1.22 → **@ 1.51** · €18.60 → **€28.09**
 
 ### Step 4 — México vs Inglaterra · 06/07 ~01:00
 Under 2.5 @ ~1.40 · calor, Azteca, tensão
@@ -113,5 +120,6 @@ COL/Emp & U3.5 @ ~1.35
 |------|----------|
 | CAN vs MAR | `canada_morocco_sim.py` |
 | PAR vs FRA | `france_paraguay_sim.py` |
+| BRA vs NOR | `brazil_norway_sim.py` |
 | ARG vs CPV | `argentina_capeverde_sim.py` |
 | COL vs GHA | `colombia_ghana_sim.py` |
