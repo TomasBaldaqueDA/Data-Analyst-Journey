@@ -12,7 +12,7 @@
 |------|-----------|------|--------------|-----|--------|-------|
 | **1** | **04/07 18:00** | CAN vs MAR | **Under 1.5 golos 1.ª parte** | **1.31** | **78.6%** | ✅ confirmado |
 | **2** | **04/07 22:00** | PAR vs FRA | **França não vence ambas (Não)** | **1.43** | **77.9%** | ✅ confirmado |
-| **3** | **05/07 ~21:00** | BRA vs NOR | **Brasil não vence ambas (Não)** | **~1.42** | **92.1%** | ✅ confirmado MC |
+| **3** | **05/07 ~21:00** | BRA vs NOR | **Brasil não vence ambas (Não)** | **~1.42** | **91.5%** | ✅ MC recalibrado |
 | **4** | **06/07 ~01:00** | MEX vs ENG | **Under 2.5 ou MEX/EMP U3.5** | **~1.40** | **~76%** | Azteca, knockout |
 | **5** | **06/07 ~20:00** | ESP vs POR | **Espanha/Empate & Under 3.5** | **~1.38** | **~80%** | derby ibérico |
 | **6** | **07/07 ~01:00** | USA vs BEL | **Under 3.5 golos** | **~1.42** | **~77%** | evitar ML EUA |
