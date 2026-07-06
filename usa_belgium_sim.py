@@ -76,8 +76,6 @@ def simulate_match():
     usa_wins_both = res1 == 'U' and res2 == 'U'
     bel_wins_both = res1 == 'B' and res2 == 'B'
 
-    margin = b90 - u90
-    margin1 = b1 - u1
     return {
         'u90': u90, 'b90': b90, 'tg': tg,
         'u1': u1, 'b1': b1, 'u2': u2, 'b2': b2,
@@ -94,9 +92,9 @@ def simulate_match():
         'bel_dnb': res90 == 'B',
         'usa_qual': qual == 'U',
         'bel_qual': qual == 'B',
-        'usa_handicap_p1': margin < 2,   # USA +1: BEL must win by 2+
-        'bel_handicap_p1': margin > -2,   # BEL +1: USA must win by 2+
-        'bel_handicap_p1_1h': margin1 > -2,
+        'usa_handicap_p1': res90 in ('U', 'D'),   # Betclic: EUA ou empate
+        'bel_handicap_p1': res90 in ('B', 'D'),   # Betclic: BEL ou empate
+        'bel_handicap_p1_1h': res1 in ('B', 'D'),
         'usa_not_both': not usa_wins_both,
         'bel_not_both': not bel_wins_both,
         'usa_win_either': res1 == 'U' or res2 == 'U',

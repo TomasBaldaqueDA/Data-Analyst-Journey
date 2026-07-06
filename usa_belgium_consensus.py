@@ -38,19 +38,19 @@ def simulate(ux, bx, home_boost=1.06):
     tg = u90 + b90
     tg1 = u1 + b1
     res = 'U' if u90 > b90 else ('B' if b90 > u90 else 'D')
-    margin = b90 - u90  # positive = BEL leads
+    # Betclic "Resultado handicap": EUA (+1) = EUA vence OU empate (1X)
+    # Bélgica (+1) = Bélgica vence OU empate (X2) — NÃO é handicap asiático
     return {
         'res': res, 'tg': tg, 'tg1': tg1,
         'u90': u90, 'b90': b90,
-        'usa_p1': margin < 2,              # USA +1: loses only if BEL wins by 2+
-        'bel_p1': margin > -2,             # BEL +1: loses only if USA wins by 2+
+        'usa_p1': res in ('U', 'D'),
+        'bel_p1': res in ('B', 'D'),
         'x12': res in ('U', 'B'),
         'u35': tg <= 3,
         'u25': tg <= 2,
         'u15_1h': tg1 <= 1,
         'btts': u90 > 0 and b90 > 0,
-        'bel_win_2plus': b90 - u90 >= 2,
-        'usa_win_2plus': u90 - b90 >= 2,
+        'bel_win': res == 'B',
     }
 
 
@@ -76,8 +76,7 @@ def run_scenario(ux, bx, label):
         'u25': pct('u25'),
         'u15_1h': pct('u15_1h'),
         'btts': pct('btts'),
-        'bel_2plus': pct('bel_win_2plus'),
-        'usa_2plus': pct('usa_win_2plus'),
+        'bel_win': pct('bel_win'),
         'top': top,
     }
 
@@ -95,14 +94,14 @@ for ux, bx, w, label in SCENARIOS:
     print(f"  1X2: USA {r['usa_w']:.1f}% | Draw {r['draw']:.1f}% | BEL {r['bel_w']:.1f}%")
     print(f"  USA+1: {r['usa_p1']:.1f}% | BEL+1: {r['bel_p1']:.1f}% | 12: {r['x12']:.1f}%")
     print(f"  U3.5: {r['u35']:.1f}% | U2.5: {r['u25']:.1f}% | U1.5 1H: {r['u15_1h']:.1f}% | BTTS: {r['btts']:.1f}%")
-    print(f"  BEL wins by 2+: {r['bel_2plus']:.1f}% (kills USA+1)")
+    print(f"  BEL win (mata EUA+1): {r['bel_win']:.1f}%")
     print(f"  Top scores: {', '.join(f'{u}-{b} ({c/N*100:.1f}%)' for (u,b),c in r['top'])}")
 
 # Weighted consensus
 print('\n' + '=' * 100)
 print('WEIGHTED CONSENSUS (scenario weights sum to 1.0)')
 print('=' * 100)
-keys = ['usa_w', 'draw', 'bel_w', 'usa_p1', 'bel_p1', 'x12', 'u35', 'u25', 'u15_1h', 'btts', 'bel_2plus']
+keys = ['usa_w', 'draw', 'bel_w', 'usa_p1', 'bel_p1', 'x12', 'u35', 'u25', 'u15_1h', 'btts', 'bel_win']
 consensus = {}
 for k in keys:
     consensus[k] = sum(r[k] * r['weight'] for r in results)
@@ -145,6 +144,5 @@ for i, (w, mn, mx, name, odd, impl, edge, ok) in enumerate(rows, 1):
     print(f"  {i}. {name} @ {odd:.2f} → cons. {w:.1f}% [range {mn:.1f}-{mx:.1f}%]{flag}")
 
 # H2H adjustment note: 5-2 precedent → BEL 2+ win prob
-bel_2plus_avg = consensus['bel_2plus']
-print(f"\nBEL wins by 2+ (USA+1 killer): weighted avg {bel_2plus_avg:.1f}%")
-print(f"H2H precedent 5-2 Atlanta Mar 2026: real outcome, model gives {results[3]['bel_2plus']:.1f}% in BEL_fav scenario")
+bel_win_avg = consensus['bel_win']
+print(f"\nBEL win (mata EUA +1 / 1X): weighted avg {bel_win_avg:.1f}%")
